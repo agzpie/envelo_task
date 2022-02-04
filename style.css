@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body {
+    background-color: whitesmoke;
+    font-family: Roboto;
+}
+
+#title-container {
+    margin: auto;
+    margin-top: 5rem;
+    width: 50%;
+    text-align: center;
+}
+#title {
+    color:tomato;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn {
+    padding: 1.5rem 2rem;
+    background-color: tomato;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-variant: small-caps;
+    margin: auto;
+    color: navy;
+}
+
+#start-btn {
+    display: block;
+}
+
+#pick-up-btn {
+    margin-top: 1.5rem;
+    background-color: tomato;
+}
+
+#input-form {
+    margin: auto;
+    padding: 1rem;
+    display: none;
+    text-align: center;
+}
+
+#success-modal {
+    margin: auto;
+    text-align: center;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  #success-btns {
+      flex-direction: row;
+  }
+
+

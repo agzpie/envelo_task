@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <div id="title-container">
+        <h1 id="title">ENVELO</h1>
+        <p>Możesz mieć swoją przesyłkę w kilkanaście sekund.<br>Rozpocznij klikając w przycisk</p>
+    </div>
+
+    <div class="container">
+        <button class="btn" id="start-btn">odbierz paczkę</button>
+        <form class="input-form" id="input-form" onsubmit="pickUp()">
+            <label for="phone">Numer telefonu:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" minlength="9" maxlength="9" required oninvalid="this.setCustomValidity('Numer telefonu musi mieć 9 znaków.')"
+            oninput="this.setCustomValidity('')"><br>
+            <label for="code">Kod odbioru:</label><br>
+            <input type="password" id="code" inputmode="numeric" name="code" minlength="4" maxlength="4" required oninvalid="this.setCustomValidity('Kod odbioru musi mieć 4 znaki.')"
+            oninput="this.setCustomValidity('')"><br>
+
+            <button type="submit" class="btn" id="pick-up-btn">odbierz paczkę</button>
+          </form>
+
+          <div class="container" id="success-modal">
+              <div class="modal-content">
+                  <h1>Paczka odebrana!</h1>
+                  <p>Zrobiłeś to w czasie 10 sekund! Czy możemy zrobić dla Ciebie coś jeszcze?</p>
+    
+                  <div id="success-btns">
+                    <button class="btn" id="reset-btn">to wszystko na dziś</button>
+                    <button class="btn" id="next-btn">odbierz kolejną paczkę</button>
+                  </div>
+              </div>
+          </div>
+
+    </div>
+
+
+
     
 
     <script src="main.js"></script>
